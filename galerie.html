@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Galerie</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="scripts.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- DESKTOP -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars w3-xxlarge"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="galerie.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GALERIE</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- PHONE SCREEN -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="galerie.html" class="w3-bar-item w3-button" onclick="toggleFunction()">GALERIE</a>
+    <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" style="animation: fadeInDown 1s ease-in-out;">
+  <h2 class="w3-center"><b>GALERIE</b></h2>
+
+  <div class="w3-content w3-container" id="portfolio">
+    <h4 class="w3-center">Lucrarile mele</h4>
+  
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding">
+      <div class="w3-col m6 w3-padding-16 w3-center">
+        <img src="./images/2.jpg" style="width:100%; border-radius: 2%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Gradina Zak">
+      </div>
+  
+      <div class="w3-col m6 w3-padding-16">
+        <p> Insamantat gazon</p>
+      </div>
+    </div>
+    <hr style="color: #758467;">
+
+    <div class="w3-row-padding">
+      <div class="w3-col m6 w3-padding-16">
+        <p> Design modern </p>
+      </div>
+
+      <div class="w3-col m6 w3-padding-16 w3-center">
+        <img src="./images/3.jpg" style="width:100%; border-radius: 2%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Gradina Zak">
+      </div>
+    </div>
+    <hr style="color: #758467;">
+
+    <div class="w3-row-padding">
+      <div class="w3-col m6 w3-padding-16 w3-center">
+        <img src="./images/4.jpg" style="width:100%; border-radius: 2%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Gradina Zak">
+      </div>
+  
+      <div class="w3-col m6 w3-padding-16">
+        <p> Design artistic</p>
+      </div>
+    </div>
+    <hr style="color: #758467;">
+
+    <div class="w3-row-padding">
+      <div class="w3-col m6 w3-padding-16">
+        <p> Drenaje si sapaturi cu escavator</p>
+      </div>
+      <div class="w3-col m6 w3-padding-16 w3-center">
+        <img src="./images/5.jpg" style="width:100%; border-radius: 2%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Gradina Zak">
+      </div>
+    </div>
+    <hr style="color: #758467;">
+
+    <div class="w3-row-padding">
+      <div class="w3-col m6 w3-padding-16 w3-center">
+        <img src="./images/8.jpg" style="width:100%; border-radius: 2%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Gradina Zak">
+      </div>
+  
+      <div class="w3-col m6 w3-padding-16">
+        <p> Sistem irigare automatizata</p>
+      </div>
+    </div>
+    <hr style="color: #758467;">
+
+    <div class="w3-row-padding">
+      <div class="w3-col m6 w3-padding-16">
+        <p> Defisare si tocat zone spinoase</p>
+      </div>
+      <div class="w3-col m6 w3-padding-16 w3-center">
+        <img src="./images/6.jpg" style="width:100%; border-radius: 2%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Gradina Zak">
+      </div>
+    </div>
+    <hr style="color: #758467;">
+
+    <div class="w3-row-padding">
+      <div class="w3-col m6 w3-padding-16 w3-center">
+        <img src="./images/15.jpg" style="width:100%; border-radius: 2%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Gradina Zak">
+      </div>
+  
+      <div class="w3-col m6 w3-padding-16">
+        <p> Curatare pomi fructiferi</p>
+      </div>
+    </div>
+    <hr style="color: #758467;">
+
+    <div class="w3-row-padding">
+      <div class="w3-col m6 w3-padding-16">
+        <p> Intretinere gazon (funghicide, erbicide, complex chimic...)</p>
+      </div>
+      <div class="w3-col m6 w3-padding-16 w3-center">
+        <img src="./images/16.jpg" style="width:100%; border-radius: 2%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Gradina Zak">
+      </div>
+    </div>
+    <hr style="color: #758467;">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64">
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/gradinazak/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  </div>
+</footer>
+
+
+</body>
+</html>

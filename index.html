@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GRADINA ZAK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="scripts.js"></script>
+<link rel="stylesheet" href="styles.css">
+<style>
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url('./images/casa.jpg');
+  min-height: 100%;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.bgimg-2 {
+  background-image: url("./images/2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("./images/3.jpg");
+  min-height: 400px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+* {box-sizing: border-box;}
+
+.active {
+  background-color: #2c2c2c;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+
+<body>
+<!-- DESKTOP -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars w3-xxlarge"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="galerie.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GALERIE</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- PHONE SCREEN -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="galerie.html" class="w3-bar-item w3-button" onclick="toggleFunction()">GALERIE</a>
+    <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<div class="bgimg-1 w3-display-container ">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity" style="background-color: #9caf88;">
+      GRADINA ZAK</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" >
+  <h2 class="w3-center">CONECTAM OAMENI SI NATURA</h2>
+  <p>Credem că grădinile, în special grădinile urbane, oferă un echilibru între viața modernă și conectivitatea și liniștea naturii. Ne străduim să promovăm această conexiune cu fiecare spațiu exterior pe care îl creăm. Toate spațiile noastre sunt proiectate la comandă, cu accent pe peisaje vegetale luxuriante și artistice și o sensibilitate de design modern.</p>
+  <p><b>GRADINA ZAK</b> se ocupa cu proiecte pentru gradina cu o experienta de peste 25 de ani, dand dovada de profesionalism si seriozitate.</p>
+  
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">24/7</span><br>
+    Disponibilitate
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">25 ani</span><br>
+    de experienta
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">100+</span><br>
+    Clienti multumiti
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">100%</span><br>
+    Incredere
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">CU CE VA PUTEM AJUTA</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h2 class="w3-center">GRADINI DE LA 0 LA 100</h2>
+  <p><b>GRADINA ZAK</b> realizeaza diferite lucrari precum: </p>
+  <ul>
+    <li>insamantare gazon si intretinere</li>
+    <li>transport materiale prime (pamant, nisip, pietri..)</li>
+    <li>instalatie de irigare</li>
+    <li>curatat pomi fructiferi si livezi</li>
+    <li>desrisat spatii impadurite, mure sau spini</li>
+    <li>taiat iarba</li>
+    <li>arat si frezat pamant</li>
+    <li>tratamente in caz de imbolnavire (funghicide sau pesticide, insecticide si toate felurile de insecte viespe muste, tintari, furnici, gindaci etc)</li>
+    <li>dezapezire strada</li>
+    <li>sapaturi santuri cu escavatorul</li>
+  </ul>
+</div>
+
+<!--scroller-->
+<marquee scrollamount="20">
+  <img src="./images/2.jpg" style="max-height: 350px;">
+  <img src="./images/3.jpg" style="max-height: 350px;">
+  <img src="./images/4.jpg" style="max-height: 350px;">
+  <img src="./images/5.jpg" style="max-height: 350px;">
+  <img src="./images/6.jpg" style="max-height: 350px;">
+  <img src="./images/7.jpg" style="max-height: 350px;">
+  <img src="./images/8.jpg" style="max-height: 350px;">
+</marquee>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">NU EZITA SA NE CONTACTEZI!</span>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64 ">
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/gradinazak/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
